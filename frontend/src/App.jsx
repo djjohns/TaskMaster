@@ -66,6 +66,7 @@ export default function App() {
   return (
     <>
       < TopNavbar />
+      <br />
       <NewTaskForm onSubmit={addTask} />
       <h1 className="header">Task List</h1>
       <TaskList tasks={tasks} toggleTask={toggleTask} deleteTask={deleteTask} />

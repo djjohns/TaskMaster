@@ -6,7 +6,7 @@
   body {
     background: #333;
     color: hsl(200, 100%, 90%);
-    max-width: 400px;
+    /* max-width: 400px; */
     padding: 1rem;
     margin: 0 auto;
   }
@@ -14,13 +14,14 @@
   .new-item-form {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
+    max-width: 400px;
   }
   
   .form-row {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 1.5rem;
   }
   
   .btn {
@@ -31,7 +32,6 @@
     border-radius: 0.25em;
     cursor: pointer;
     outline: none;
-    border-radius: 12px;
   }
   
   .btn:hover,
@@ -66,7 +66,7 @@
   .header {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .list {
@@ -83,12 +83,12 @@
   .list {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 1.5rem;
   }
   
   .list li {
     display: flex;
-    gap: 0.5rem;
+    gap: 1.5rem;
     align-items: center;
   }
   
@@ -97,6 +97,7 @@
     gap: 0.25rem;
     cursor: pointer;
     align-items: center;
+    gap: 1.5rem;
   }
   
   .list li:has(input:focus-visible) label {
