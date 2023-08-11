@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
 import { NewTaskForm } from "./components/NewTaskForm"
-import "./styles.css"
 import { TaskList } from "./components/TaskList"
+import TopNavbar from "./components/TopNavbar";
 import axios from 'axios';
+import "./styles.css"
+
+
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
@@ -62,9 +65,10 @@ export default function App() {
 
   return (
     <>
+      < TopNavbar />
       <NewTaskForm onSubmit={addTask} />
       <h1 className="header">Task List</h1>
       <TaskList tasks={tasks} toggleTask={toggleTask} deleteTask={deleteTask} />
     </>
-  )
+  );
 }
